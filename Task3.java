@@ -8,23 +8,23 @@ public class Task3
 
         Scanner sc = new Scanner(System.in);
 
-        int pin=2607;
+        int pin = 2607;
 
         System.out.println("Please enter your pin number: ");
-        int pass=sc.nextInt();
+        int pass = sc.nextInt();
 
-        int i=1;
-        if(pass!=pin)
+        int i = 1;
+        if(pass != pin)
         {
             while(true)
             {
                 i++;
-                System.out.println("Wrong pin Number!! ");
+                System.out.println("Sorry you enter wrong pin Number!! ");
 
                 System.out.println("Please Re-enter your pin (Max. Attempts :- 3) : ");
-                pass=sc.nextInt();
+                pass = sc.nextInt();
 
-                if(pass==pin)
+                if(pass == pin)
                 {
                     break;
                 }
@@ -35,9 +35,9 @@ public class Task3
                 }
             }
         }
-        if(pass==pin)
+        if(pass == pin)
         {
-            System.out.println("<------Welcome to ATM services------>");  
+            System.out.println("<------*****Welcome to ATM services*****------>");  
             while(true)
             {
                 System.out.println("Enter 1 to Check your Balance amount");
